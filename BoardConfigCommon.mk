@@ -33,8 +33,8 @@ TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_VARIANT := krait
 
 # Architecture
-TARGET_GLOBAL_CFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
+TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
 
 # Krait optimizations
@@ -103,6 +103,9 @@ TARGET_USES_QCOM_MM_AUDIO := true
 BOARD_AUDIO_EXPECTS_MIN_BUFFERSIZE := true
 BOARD_AUDIO_CAF_LEGACY_INPUT_BUFFERSIZE := true
 BOARD_USES_FLUENCE_INCALL := true
+
+# Use retire fence from MDP driver
+TARGET_DISPLAY_USE_RETIRE_FENCE := true
 
 # Media
 TARGET_QCOM_MEDIA_VARIANT := caf
