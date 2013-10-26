@@ -46,7 +46,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/fstab.qcom:recovery/root/fstab.qcom \
     $(COMMON_PATH)/rootdir/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
     $(COMMON_PATH)/rootdir/system/etc/init.sony.bt.sh:system/etc/init.sony.bt.sh \
-    $(COMMON_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
+    $(COMMON_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
+    $(COMMON_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Key and touchscreen files
 PRODUCT_COPY_FILES += \
