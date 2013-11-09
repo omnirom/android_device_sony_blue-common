@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ab89d9a9_687a77e8",
+        "filename": "rootdir/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 1000071
+      },
+      "writtenOn": "2013-11-09T11:13:32Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be vice versa ??  \n\n/mnt/media_rw/sdcard0 /storage/sdcard0 \n\ninstead of  \n\n/storage/sdcard0 /mnt/media_rw/sdcard0",
+      "revId": "f75b4376d870a29ff1a233f92a6b7e39abf5949f",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
