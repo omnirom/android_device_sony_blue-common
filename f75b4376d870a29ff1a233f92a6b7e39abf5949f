@@ -16,6 +16,24 @@
       "revId": "f75b4376d870a29ff1a233f92a6b7e39abf5949f",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ab89d9a9_888b3bc3",
+        "filename": "rootdir/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 1000022
+      },
+      "writtenOn": "2013-11-09T13:15:59Z",
+      "side": 1,
+      "message": "Nope - that\u0027s the crux of yours and cdesai\u0027s problems on CM and AOKP - vold needs to be changed for this though.",
+      "parentUuid": "ab89d9a9_687a77e8",
+      "revId": "f75b4376d870a29ff1a233f92a6b7e39abf5949f",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
