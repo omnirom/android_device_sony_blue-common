@@ -74,10 +74,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml
 
-# RIL hack
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/lib/libril.so:system/lib/libril.so
-
 # GPS
 PRODUCT_COPY_FILES += \
    $(COMMON_PATH)/rootdir/system/etc/gps.conf:system/etc/gps.conf
