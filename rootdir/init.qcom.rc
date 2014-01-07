@@ -26,6 +26,7 @@ on init
     mkdir /storage 0775 system system
     mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
     mkdir /mnt/media_rw/sdcard1 0700 media_rw media_rw
+    mkdir /mnt/media_rw/usbdisk 0700 media_rw media_rw
     mkdir /storage/sdcard0 0775 system system
     mkdir /storage/sdcard1 0775 system system
     mkdir /storage/usbdisk 0775 system system
@@ -312,6 +313,10 @@ service fuse_sdcard0 /system/bin/sdcard -u 2800 -g 2800 -w 2800 /mnt/media_rw/sd
     disabled
 
 service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/sdcard1 /storage/sdcard1
+    class late_start
+    disabled
+
+service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/usbdisk /storage/usbdisk
     class late_start
     disabled
 
