@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
     libmmcamera_interface2 \
     libmmcamera_interface
 
+# OmniTorch
+PRODUCT_PACKAGES += \
+    OmniTorch
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8960
