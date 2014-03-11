@@ -149,6 +149,8 @@ DEVICE_RESOLUTION := 720x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_FLASH_FROM_STORAGE := true
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
@@ -162,7 +164,6 @@ TW_CRYPTO_KEY_LOC := "footer"
 TW_INCLUDE_FUSE_EXFAT := true
 TW_BOARD_CUSTOM_GRAPHICS := ../../../device/sony/blue-common/recovery/twrpgraphics.c
 TW_MAX_BRIGHTNESS := 255
-TW_NO_USB_STORAGE := true
 
 # inherit from the proprietary version
 -include vendor/sony/blue-common/BoardConfigVendor.mk
