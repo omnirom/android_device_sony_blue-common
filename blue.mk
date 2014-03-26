@@ -52,6 +52,11 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(COMMON_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
+# Additional sbin stuff
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/sbin/wait4tad_static:root/sbin/wait4tad_static \
+    $(LOCAL_PATH)/rootdir/sbin/tad_static:root/sbin/tad_static
+
 # Key and touchscreen files
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/usr/idc/sensor00_f11_sensor0.idc:system/usr/idc/sensor00_f11_sensor0.idc \
