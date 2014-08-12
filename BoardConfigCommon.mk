@@ -158,6 +158,8 @@ TW_CRYPTO_KEY_LOC := "footer"
 TW_INCLUDE_FUSE_EXFAT := true
 TW_MAX_BRIGHTNESS := 255
 TW_NO_USB_STORAGE := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight_1/brightness"
+TW_SECONDARY_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight_2/brightness"
 
 BOARD_SEPOLICY_DIRS += \
     device/sony/blue-common/sepolicy
